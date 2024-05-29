@@ -1,0 +1,87 @@
+
+.navbar{
+    display: flex;
+    padding: 13px 20px;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #3a3939;
+    margin: 10px;
+    border-radius: 80px;
+
+}
+.left{
+    display: flex;
+    flex-direction: row;
+    gap:25px;
+    justify-content: flex-start;
+}
+
+.link{
+    background-color: #000000;
+    border-radius: 100px;
+    box-shadow: rgba(21, 29, 95, 0.2) 0 -25px 18px -14px inset,rgba(44, 82, 187, 0.15) 0 1px 2px,rgba(44, 73, 187, 0.15) 0 2px 4px,rgba(53, 44, 187, 0.15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular,-apple-system,syste    m-ui,Roboto,sans-serif;
+    padding: 5px 30px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 18px;
+    font-weight: 700;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.link:hover{
+    box-shadow: rgba(22, 31, 149, 0.35) 0 -25px 18px -14px inset,rgba(73, 44, 187, 0.25) 0 1px 2px,rgba(58, 44, 187, 0.25) 0 2px 4px,rgba(44, 63, 187, 0.25) 0 4px 8px,rgba(44, 134, 187, 0.25) 0 8px 16px,rgba(151, 192, 223, 0.25) 0 16px 32px;
+    transform: scale(1.2) rotate(-1deg);
+}
+.link:active{
+    transform: scale(0.85) rotate(1deg);
+}
+.right{
+    display: flex;
+    gap:10px;
+    flex-direction: row;
+    float: inline-end;
+}
+
+.inputcontainer {
+    display: flex;
+    align-items: center;
+    background-color: #0F172A;
+    padding: 5px 15px;
+    gap: 5px;
+    border-radius: 20px;
+    border: white 1px solid;
+    width: 300px;
+  }
+  .text {
+    font-size: .8rem;
+    color: white;
+  }
+  
+  .user {
+    color: #E879F9;
+    /* padding: 0 10px; */
+  }
+  
+  .searchtext {
+    color: #2DD4BF;
+  }
+  
+ .char {
+    color: #A78BFA;
+  }
+  
+.input {
+    font-size: .8rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+  }
