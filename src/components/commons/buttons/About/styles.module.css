@@ -1,0 +1,34 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    height: 45px;
+    border: none;
+    padding: 0px 15px;
+    border-radius: 5px;
+    background-color: rgb(49, 49, 83);
+    
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .icon {
+    width: fit-content;
+    height: 22px;
+    color: rgb(123, 134, 184);
+  }
+  .text {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  .btn:hover {
+    background-color: rgb(73, 73, 105);
+    .icon{
+        height:25px;
+    }
+  }
+  .btn:active {
+    transform: scale(0.80);
+  }
