@@ -1,0 +1,39 @@
+
+.outerarea{
+
+    display: flex;
+    flex-direction: column ;
+    background-color: beige;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top:0;
+    right: 0;
+
+}
+.heading{
+    color: black;
+    font-weight: 600;
+    padding:10px;
+}
+.content{
+    padding: 15px;
+    width:100%;
+    background-color: aliceblue;
+    color: black;
+    border: 2px black solid;
+    border-radius: 1px;
+    font-size: 12px;
+    text-wrap: wrap;
+    font-weight: 500;
+}
+.button{
+    background-color:rgb(27, 79, 63);
+    border: 1px black solid;
+    border-radius: 2px;
+    width: 160px;
+    padding:5px 0px;
+    margin:5px;
+    color: aliceblue;
+
+}
