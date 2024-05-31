@@ -6,7 +6,7 @@ export default function Linkedin(){
         <>
             <div className={styles.container}>
                 <div className={styles.text}>
-                    <Link className={styles.icon} href="/">
+                    <Link className={styles.icon} href="https://www.linkedin.com/in/riya-bansal-361718230?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">
                         <div className={styles.layer}>
                             <span className={styles.parts}></span>
                             <span className={styles.parts}></span>

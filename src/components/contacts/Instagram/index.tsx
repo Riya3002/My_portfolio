@@ -6,7 +6,7 @@ export default function Instagram(){
         <>
             <div className={styles.container}>
                 <div className={styles.text}>
-                    <Link className={styles.icon} href="/">
+                    <Link className={styles.icon} href="https://www.instagram.com/bansalriya_21">
                         <div className={styles.layer}>
                             <span className={styles.parts}></span>
                             <span className={styles.parts}></span>
