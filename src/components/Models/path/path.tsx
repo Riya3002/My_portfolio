@@ -20,12 +20,12 @@ export default function Path() {
         }}
       >
         <ambientLight intensity={1.2} />
-        <ScrollControls pages={18}> {/* Number of pages can be adjusted as needed */}
+        <ScrollControls pages={18}>
           <Suspense fallback={<ModelLoader />}>
             <Model position={[0.85, -7.0, -13]}>
               <OrbitControls enableZoom={false} enablePan={false} />
             </Model>
-            <Entry position={[1.5,0.25,-19]} rotation={[0.3,-1.8,0.07]} />
+            <Entry position={[10,0.25,-33]} rotation={[0.3,-2,0.07]} />
             <CameraPositionControl />
             <ModelWithAnnotations />
           </Suspense>
