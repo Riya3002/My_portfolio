@@ -10,7 +10,7 @@ const NavLinks: navLink[] =[
     {
         id:2,
         title:'About',
-        path:'/about',
+        path:'../About',
     },
     {
         id:3,
