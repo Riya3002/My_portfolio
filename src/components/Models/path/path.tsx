@@ -8,6 +8,7 @@ import ModelWithAnnotations from './annotations';
 import styles from './styles.module.css'
 import ModelLoader from '@/components/Loaders/ModelLoader';
 import {Entry} from './Model'
+
 export default function Path() {
   return (
     <div>

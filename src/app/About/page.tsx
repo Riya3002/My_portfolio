@@ -1,6 +1,6 @@
 import Path from "@/components/Models/path/path"
 
-const Aboutpage=()=>{
+const Aboutpage = () => {
     return(
         <>
         <Path/>
