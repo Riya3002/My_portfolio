@@ -15,7 +15,7 @@ const NavLinks: navLink[] =[
     {
         id:3,
         title:'Contact',
-        path:'../contact',
+        path:'../Contact',
     }
 ]
 export default NavLinks;
