@@ -3,6 +3,7 @@
   background-color: transparent;
   z-index: 1;
   height: 100%;
+  box-sizing: border-box;
  
 }
 .body{
@@ -38,7 +39,7 @@
 .name{
     color: #E2C664;
     font-family: "Noticia Text";
-    font-size: 65px;
+    font-size: 60px;
     font-style: normal;
     font-weight: 700;
     line-height: 136.604%;
@@ -53,6 +54,7 @@
     font-weight: 400;
     line-height: 127.074%;
     padding-top: 5px;
+    display: flex;
 }
 .buttons{
   padding:0 20px;
@@ -65,6 +67,84 @@
     flex-direction: row;
     padding:5px 40px;
     gap:20px;
+}
+@media screen and (max-width:1100px){
+    .buttons{
+        justify-content: center;
+    }
+    .heading{
+        justify-content: center;
+    }
+    .contacts{
+        justify-content: center;
+    }
+    .container{
+        justify-content: center;
+    }
+    .name{
+        font-size: 55px;
+    }
+    .skill{
+        font-size: 30px ;
+        justify-content: center;
+    }
+    .content{
+        font-size: 25px;
+    }
+    .body{
+        padding-top:70px;
+        padding-bottom: 0;
+    }
+
+}
+@media screen and (max-width:800px){
+   
+    .name{
+        font-size: 45px;
+    }
+    .skill{
+        font-size: 30px ;
+        
+    }
+    .content{
+        font-size: 25px;
+    }
+   
+
+}
+@media screen and (max-width:450px){
+    .container{
+        justify-content: center;
+    }
+    .name{
+        font-size: 30px;
+    }
+    .skill{
+        font-size: 30px ;
+        justify-content: center;
+        text-align: center;
+    }
+    .content{
+        font-size: 15px;
+    }
+    .buttons{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .heading{
+        justify-content: center;
+        gap:6px;
+        align-items: center;
+    }
+    .contacts{
+        justify-content: center;
+    }
+    .body{
+        padding-top: 50px;
+        padding-bottom: 0px;
+    }
+
 }
 
 

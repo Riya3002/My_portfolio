@@ -5,9 +5,7 @@ import { Suspense } from 'react'
 const Homepage =()=>{
     return(
         <div>
-
-        <Suspense fallback={null}>
-            <div className={Styles.container}>
+             <div className={Styles.container}>
                 <span className={Styles.content}>
                     <Hero />
                 </span>
@@ -15,8 +13,6 @@ const Homepage =()=>{
                     <Heromodel/>
                 </div>
             </div>
-        </Suspense>
-        
         </div>
     )
 }

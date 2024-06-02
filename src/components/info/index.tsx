@@ -11,13 +11,13 @@ const Hero = () => {
             <div className ={styles.body}>
                 <div className={styles.container}>
                     <div className={styles.heading}>
-                    <span className={styles.content}>I ‘ M</span>
-                        <b className={styles.name}>
+                    <div className={styles.content}>I ‘ M</div>
+                        <div className={styles.name}>
                             <span>RIYA BANSAL</span>
-                        </b>
+                        </div>
                     </div>
                     <span>
-                        <p className={styles.skill}>Web Developer and Embedded Engineer</p>
+                        <div className={styles.skill}>Web Developer and Embedded Engineer</div>
                     </span>
                 </div>
                 <div className={styles.buttons}>
