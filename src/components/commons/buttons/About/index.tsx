@@ -6,9 +6,9 @@ export default function Aboutbtn(
 ){
     return(
         <Link  href="../About" >          
-                <div className={styles.btn}>
+            <div className={styles.btn}>
                 <FaUserAstronaut className={styles.icon}/>
-            <p className={styles.text}>About me</p>
+                <p className={styles.text}>About me</p>
             </div>
         </Link>    
     )

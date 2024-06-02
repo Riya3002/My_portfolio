@@ -22,7 +22,7 @@ const Hero = () => {
                 </div>
                 <div className={styles.buttons}>
                     <Aboutbtn/>
-                    <Resumebtn link={"/"} text={"Resume"}/>
+                    <Resumebtn link={"https://drive.google.com/file/d/1MJXgbXin5rPMRw44lY4Xwe4f27VPl5E8/view?usp=sharing"} text={"Resume"}/>
                 </div>
                 <div className={styles.contacts}>
                     <Instagram/>
