@@ -138,7 +138,7 @@ import { useFrame } from "@react-three/fiber";
           rotation={headingrotation}
           color="white"
           fontWeight={700}
-          fontSize={0.25}
+          fontSize={0.18}
           anchorX={1}
           anchorY="middle"
         >
@@ -154,7 +154,7 @@ import { useFrame } from "@react-three/fiber";
               ]}
               rotation={headingrotation}
               color="white"
-              fontSize={0.112}
+              fontSize={0.09}
               fontWeight={500}
               anchorX="left"
               anchorY="middle"
