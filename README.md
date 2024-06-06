@@ -2,7 +2,6 @@
 
 Welcome to my portfolio website repository! This project showcases my work, skills, and experiences in web development and design.
 
-
 ## 🌈 About Me
 
 Hello! I'm Riya, a passionate web developer and designer and innovative embedded emgineer. This website serves as a platform to display my projects, skills, and professional journey. 
@@ -20,13 +19,17 @@ Hello! I'm Riya, a passionate web developer and designer and innovative embedded
 
 ## 🛠️ Technologies Used
 
-- **Frontend**: ReactJS, nextJS, TypeScript, TailwindCSS
+- **Frontend**: ReactJS, NextJS, TypeScript, TailwindCSS
 - **3D Graphics**: Three.js
 - **Deployment**: Vercel
 
+  ## Obligations
+  Model used is taken from the https://sketchfab.com/3d-models/popular a good find for 3-D models free also avilable.
+  Converting the model i.e. from glb/GLTF format to React format using the https://gltf.pmnd.rs/
+
   ## 📥 Installation
 
-To set up a local copy of the project, follow these steps:
+  To set up a local copy of the project, follow these steps:
 
 1. **Clone the repository:**
    ```bash
@@ -35,16 +38,16 @@ To set up a local copy of the project, follow these steps:
 2. **Navigate to the project directory:**
     ```bash
     cd My_portfolio
+    
 3. **Install dependencies:**
    ```bash
    npm install
-
+   
   ## 💻 Usage
-
-  To run the development server, execute:
-  ```bash
-  npm run dev 
-  ```
+   To run the development server, execute:
+   ```bash
+    npm run dev
+   ```
 
   Visit http://localhost:3000 in your browser to view the website.
 
