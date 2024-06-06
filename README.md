@@ -1,8 +1,7 @@
-# 🌟 Riya's Portfolio Website
+<h1 align="center">Hi 👋, I'm Riya Bansal</h1>
 
 Welcome to my portfolio website repository! This project showcases my work, skills, and experiences in web development and design.
 
-![Portfolio Website]("D:\downloads\myportfolio.png")
 
 ## 🌈 About Me
 
@@ -39,17 +38,19 @@ To set up a local copy of the project, follow these steps:
 3. **Install dependencies:**
    ```bash
    npm install
-   
-  ##💻 Usage
-To run the development server, execute:
-    ```bash
-    npm run dev
-   
-Visit http://localhost:3000 in your browser to view the website.
 
-## 📧 Contact
+  ## 💻 Usage
 
-Feel free to reach out to me via email or through my LinkedIn profile:
+  To run the development server, execute:
+  ```bash
+  npm run dev 
+  ```
 
-- **Email**: <a href="mailto:riyabansal2103@gmail.com"><img src="https://img.icons8.com/color/48/000000/gmail.png" alt="Gmail" width="30"></a>
-- **LinkedIn**: <a href="https://www.linkedin.com/in/riya-bansal-361718230/"><img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn" width="30"></a>
+  Visit http://localhost:3000 in your browser to view the website.
+
+  ## 📧 Contact
+
+  Feel free to reach out to me via email or through my LinkedIn profile:
+
+  <a href="mailto:riyabansal2103@gmail.com"><img src="https://img.icons8.com/color/48/000000/gmail.png" alt="Gmail" width="30"></a>
+  <a href="https://www.linkedin.com/in/riya-bansal-361718230/"><img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn" width="30"></a>
