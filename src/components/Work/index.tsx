@@ -1,6 +1,5 @@
 'use client'
 import React from "react"
-import Image from "next/image"
 import styles from './styles.module.css'
 export default function Work() {
     return(
@@ -34,7 +33,7 @@ export default function Work() {
 			<div className={styles.body}>
 				<p  className={styles.leader}>• Led and built various projects including nanonavigator, econveyer belt, morse code detector, wireless EV charging station, authentication system, line following robot</p>
 				<p  className={styles.leader}>• Event Management- organised various inter college and intra college events and competitions </p>
-				<p  className={styles.leader}>• Lead Designer and Developer of the club's website</p>
+				<p  className={styles.leader}>• Lead Designer and Developer of website of The club</p>
                 <div className={styles.btns}>
                     <button className={styles.button} onClick={() => window.location.href = 'https://jugaadclub.vercel.app/'}>Website Link</button>
                     <button className={styles.button} onClick={() => window.location.href = 'https://github.com/Riya3002'}>Github Link</button>
