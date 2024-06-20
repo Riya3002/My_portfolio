@@ -6,7 +6,7 @@ import * as THREE from 'three';
 
 // control points for the spline path
 const positionControlPoints = [
-  new THREE.Vector3(9, 0.38, -25),
+  new THREE.Vector3(7.5, 0.38, -23),
   new THREE.Vector3(5.3, 0.38, -21),
   new THREE.Vector3(4, 0.38, -19),
   new THREE.Vector3(3.5, 0.38, -17),
