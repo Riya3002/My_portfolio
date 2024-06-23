@@ -3,7 +3,6 @@
 import React, { useState, useRef } from "react";
 import { Text, Plane, useScroll } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
-import styles from "./styles.module.css";
 
 interface AnnotationPoint {
   id: number;
@@ -144,7 +143,6 @@ const Annotation: React.FC<AnnotationProps> = ({
         anchorY="middle"
         outlineWidth={0.02} 
         outlineColor="black"
-       
         onClick={() => {
           if (links && links[0]) {
             window.open(links[0], '_self');
