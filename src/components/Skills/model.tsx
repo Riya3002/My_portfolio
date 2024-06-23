@@ -82,7 +82,7 @@ function AnimatedModel({ scale, position, targetRotationAngle }: { scale: number
             }
 
             const newAction = mixer.current.clipAction(clip);
-            newAction.setLoop(THREE.LoopOnce);
+            newAction.setLoop(THREE.LoopOnce, 1);
             newAction.clampWhenFinished = true;
             newAction.play();
             setAction(newAction);
@@ -163,8 +163,5 @@ const SkillModel: React.FC = () => {
 };
 
 export default SkillModel;
-
-
-
 
 
