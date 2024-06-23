@@ -2,8 +2,11 @@ import React from "react";
 import Card from "@/components/cards/webcard";
 import ECard from "@/components/cards/embedded";
 import Work from "@/components/Work";
+import Navbar from "@/components/Navbar";
 const Projects =()=>{
     return(
+        <>
+        <Navbar/>
         <div className=" text-white " style={{backgroundImage:`url('/bg_project.jpeg')`, backgroundRepeat: "no-repeat", backgroundSize:'cover', backgroundAttachment:'fixed'}}>
             <div>
                 <Work/>
@@ -27,6 +30,7 @@ const Projects =()=>{
             </div>
         </div>
         </div>
+        </>
     )
 }
 export default Projects;
