@@ -6,7 +6,8 @@ import Contactpage from "./Contact/page";
 export default function Home() {
   return (
    <>
-   <Homepage/>
+   {/* <Homepage/> */}
+   <Path/>
    </>
   );
 }

@@ -1,6 +1,7 @@
-'use client'
-import React, { useState } from "react";
-import { Text, useScroll } from "@react-three/drei";
+'use client';
+
+import React, { useState, useRef } from "react";
+import { Text, Plane, useScroll } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import styles from "./styles.module.css";
 
@@ -9,8 +10,6 @@ interface AnnotationPoint {
   position: [number, number, number];
   rotation: [number, number, number];
   heading: string;
-  content: string[];
-  contentBasePosition: [number, number, number];
   headingposition: [number, number, number];
   headingrotation: [number, number, number];
   links?: string[];
@@ -19,92 +18,69 @@ interface AnnotationPoint {
 const annotationPoints: AnnotationPoint[] = [
   {
     id: 1,
-    position: [2.7, 1.3, 8.5],
-    rotation: [0.1, -0.12, 0.05],
-    heading: 'Website Development',
-    contentBasePosition: [0.2, 1, 0],
-    headingposition: [1, 1.3, -0.21],
+    position: [2.7, 1.3, 7],
+    rotation: [0.1, -0.11, 0.05],
+    heading: 'About',
+    headingposition: [0.5, 0.4, 0],
     headingrotation: [0, -0.2, 0.04],
-    content: [
-      'Frameworks: Reactjs, Nextjs',
-      'UI: CSS, Tailwind, Figma, Canva',
-      'Languages: Javascript, Typescript, Python',
-      'Database: MongoDB, MySQL',
-      'Tools: Github, VSCode',
-      'Backend: ExpressJS, NodeJS'
+    links: [
+      '../about'
     ]
   },
   {
     id: 2,
-    position: [-0, 1, 1.2],
+    position: [0, 1, 0],
     rotation: [0, -0.1, 0],
-    heading: 'Embedded Engineering and Robotics',
-    contentBasePosition: [-0.7, 0.6, 0],
-    headingposition: [0.2, 0.9, 0],
+    heading: 'Skills',
+    headingposition: [0.6, 0.34, 0],
     headingrotation: [0, -0.2, 0.07],
-    content: [
-      'Software: Arduino IDE, Thonny, Kicad,LTspice',
-      'Hardware: Microcontrollers,Sensors, Actuators,Buck-Boost Converters'
+    links: [
+      '../skills'
     ]
   },
   {
     id: 3,
-    position: [2.4, 0.9, -3],
+    position: [2.4, 0.9, -5],
     rotation: [0, 0, 0],
-    heading: 'Graphic Designing',
-    contentBasePosition: [0.2, 0.45, 0],
-    headingposition: [1, 0.7, 0],
+    heading: 'Experience',
+    headingposition: [0.6, 0.35, 0],
     headingrotation: [-0.1, -0.3, 0],
-    content: [
-      'Canva',
-      'Figma',
-      'Adobe Photoshop',
-      'Adobe Illustrator'
+    links: [
+      '../Projects'
     ]
   },
   {
     id: 4,
-    position: [0.5, 0.5, -8],
+    position: [0.5, 0.5, -11],
     rotation: [0, -0.2, 0],
-    heading: 'Development Tools',
-    contentBasePosition: [0.3, 0.5, 0],
-    headingposition: [0.9, 0.7, 0],
+    heading: 'Contact',
+    headingposition: [0.6, 0.3, 0],
     headingrotation: [0, -0.1, -0.01],
-    content: [
-      'Git',
-      'Github',
-      'VS Code',
+    links: [
+      '../Contact'
     ]
   },
   {
     id: 5,
-    position: [3.5, 0.3, -13],
+    position: [3.7, 0.3, -16],
     rotation: [0, -0.4, 0],
-    heading: ' Soft Skills',
-    contentBasePosition: [0.2, 0.5, 0],
-    headingposition: [1, 0.7, 0],
+    heading: 'Projects',
+    headingposition: [0.6, 0.4, 0],
     headingrotation: [0, 0, -0.05],
-    content: [
-      'Management',
-      'Leadership',
-      'delegation',
-      'Analytical Thinking',
-      'Public Speaking'
+    
+    links: [
+      '../Projects'
     ]
   },
   {
     id: 6,
     position: [10.9, -2, -29],
     rotation: [0, -0.4, 0],
-    heading: 'Experience',
-    contentBasePosition: [0, 3.3, 0],
-    headingposition: [0.9, 3.5, 0],
+    heading: 'Resume',
+    headingposition: [0.6, 3.5, 0],
     headingrotation: [0, 0, -0.07],
-    content: [
-      ' click here for' ,'work experience ' ,'and projects'
-    ],
     links: [
-      '../Projects'
+      ''
     ]
   }
 ];
@@ -114,8 +90,6 @@ interface AnnotationProps {
   position: [number, number, number];
   rotation: [number, number, number];
   heading: string;
-  content: string[];
-  contentBasePosition: [number, number, number];
   headingposition: [number, number, number];
   headingrotation: [number, number, number];
   visible: boolean;
@@ -124,9 +98,10 @@ interface AnnotationProps {
 }
 
 const Annotation: React.FC<AnnotationProps> = ({
-  id, position, rotation, heading, contentBasePosition, headingposition, headingrotation, content, visible, onClick, links
+  id, position, rotation, heading, headingposition, headingrotation, visible, onClick, links
 }) => {
   const radius = 0.1;
+  const textRef = useRef(null);
 
   if (!visible) return null;
 
@@ -149,46 +124,35 @@ const Annotation: React.FC<AnnotationProps> = ({
       >
         {id.toString()}
       </Text>
+      
+      {/* Heading Background */}
+      {!links && (
+        <Plane 
+          position={[headingposition[0], headingposition[1], headingposition[2] - 0.01]}
+          rotation={headingrotation}
+          args={[2.4, 0.4]}
+          material-color="black"
+        />
+      )}
       <Text
         position={headingposition}
         rotation={headingrotation}
         color="white"
         fontWeight={700}
-        fontSize={0.18}
+        fontSize={0.32}
         anchorX={1}
         anchorY="middle"
+        outlineWidth={0.02} 
+        outlineColor="black"
+       
         onClick={() => {
           if (links && links[0]) {
-            window.open(links[0], '_blank');
+            window.open(links[0], '_self');
           }
         }}
       >
         {heading}
       </Text>
-      {content.map((item, index) => (
-        <React.Fragment key={index}>
-          <Text
-            position={[
-              contentBasePosition[0],
-              contentBasePosition[1] - (index * 0.15),
-              contentBasePosition[2] - 0.005
-            ]}
-            rotation={headingrotation}
-            color="white"
-            fontSize={0.09}
-            fontWeight={500}
-            anchorX="left"
-            anchorY="middle"
-            onClick={() => {
-              if (links && links[index]) {
-                window.open(links[index], '_blank');
-              }
-            }}
-          >
-            {item}
-          </Text>
-        </React.Fragment>
-      ))}
     </group>
   );
 };
@@ -219,8 +183,6 @@ const ModelWithAnnotations: React.FC = () => {
           heading={point.heading}
           position={point.position}
           rotation={point.rotation}
-          content={point.content}
-          contentBasePosition={point.contentBasePosition}
           headingposition={point.headingposition}
           headingrotation={point.headingrotation}
           visible={visibleAnnotations[index]}

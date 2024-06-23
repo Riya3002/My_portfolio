@@ -1,9 +1,11 @@
+import Path from "@/components/Models/path/path";
 import Homepage from "@/components/homepage"
 
 const HomePage=()=>{
     return(
         <>
-        <Homepage/>
+        
+        <Path/>
         </>
     )
 }
