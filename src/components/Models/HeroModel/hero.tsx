@@ -5,7 +5,7 @@ import { OrbitControls } from '@react-three/drei';
 import { AnimationMixer, VectorKeyframeTrack, AnimationClip, Group } from 'three';
 import Model from './Model';
 import Styles from './styles.module.css';
-import ModelLoader from "@/components/Loaders/ModelLoader";
+import Loader from "@/components/Loaders/loader";
 import { useMediaQuery } from 'react-responsive';
 
 function AnimatedModel({ scale,position }: { scale: number;position:[number,number,number]}) {
@@ -64,7 +64,7 @@ export default function Heromodel() {
                 <ambientLight intensity={1.6} />
                 <hemisphereLight intensity={1}/>
                 <light intensity={6} />
-                <Suspense fallback={<ModelLoader/>}>
+                <Suspense fallback={<Loader/>}>
                     <AnimatedModel scale={modelScale} position={[modelPosition[0],modelPosition[1],modelPosition[2]]} />
                     <OrbitControls enablePan={false} enableRotate={false} enableZoom={false} />
                 </Suspense>

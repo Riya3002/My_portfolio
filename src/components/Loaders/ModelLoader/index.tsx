@@ -5,6 +5,7 @@ export default function ModelLoader(){
     return(
         <Html>
         <div className={styles.loader}>
+            <div className={styles.welcome}>Welcome to my portfolio</div>
             <div className={styles.scanner}>
                 <span className={styles.text}>Loading...</span>
             </div>

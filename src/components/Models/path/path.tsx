@@ -17,7 +17,7 @@ export default function Path() {
         style={{
           background: 'radial-gradient(circle, rgba(24,117,85,1) 0%, rgba(0,0,0,1) 100%)',
           width: '100vw',
-          height: '90vh',
+          height: '100vh',
         }}
       >
         <ambientLight intensity={1.2} />
