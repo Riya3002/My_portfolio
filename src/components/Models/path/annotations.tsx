@@ -23,7 +23,7 @@ const annotationPoints: AnnotationPoint[] = [
     headingposition: [0.5, 0.4, 0],
     headingrotation: [0, -0.2, 0.04],
     links: [
-      '../about'
+      '../Aboutpage'
     ]
   },
   {
