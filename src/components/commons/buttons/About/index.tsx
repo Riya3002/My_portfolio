@@ -5,10 +5,10 @@ import Link from 'next/link'
 export default function Aboutbtn(
 ){
     return(
-        <Link  href="../About" >          
+        <Link  href="../skills" >          
             <div className={styles.btn}>
                 <FaUserAstronaut className={styles.icon}/>
-                <p className={styles.text}>About me</p>
+                <p className={styles.text}>My skills</p>
             </div>
         </Link>    
     )

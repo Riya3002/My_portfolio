@@ -7,7 +7,36 @@ export default function Work() {
     <section className={styles.timeline}>
 	<div className={styles.heading}>Work Experience</div>
 	<div className={styles.demoCardWrapper}>
-        <div className={`${styles.demoCard} ${styles.step1}`}>
+	<div className={`${styles.demoCard} ${styles.step1}`}>
+			<div className={styles.head}>
+				<div className={styles.numberBox}>
+					<span className={styles.span}>Jun2024 - Aug2024</span>
+				</div>
+				<div className={styles.subtitle}><div className={styles.small}>Semiconductor Manufactruing Trainee</div> National Tsing Hua University, Taiwan</div>
+			</div>
+			<div className={styles.body}>
+			<h1 className={styles.leader}> </h1>
+                <p className={styles.leader}>• Selected for semiconductor manufacturing training held by TCSFT and NTHU, Taiwan among students from colleges all over India as a part of INDO-TAIWAN Collaborative Workforce Development Program</p>
+                <p className={styles.leader}>• Had hands on training on the process of semiconductor fabrication including substrate cleaning, oxidation,
+				lithography, etching, metallization, etc</p>	
+
+
+			</div>
+		</div>
+		<div className={`${styles.demoCard} ${styles.step2}`}>
+			<div className={styles.head}>
+				<div className={styles.numberBox}>
+					<span className={styles.span}>Oct2023</span>
+				</div>
+				<div className={styles.subtitle}><div className={styles.small}>Semiconductor Fabrication Trainee</div> IIT Hyderabad, Hyderabad</div>
+			</div>
+			<div className={styles.body}>
+                <p className={styles.leader}>• Selected for a three phase semiconductor manufacturing training in collaboration with GoI among top 50 students all over India</p>
+                <p className={styles.leader}>• Worked on the instruments and machinery to fabricate different components from silicon wafers  </p>
+              
+			</div>
+		</div>
+        <div className={`${styles.demoCard} ${styles.step3}`}>
 			<div className={styles.head}>
 				<div className={styles.numberBox}>
 					<span className={styles.span}>May2023-Present</span>
@@ -23,7 +52,7 @@ export default function Work() {
 	            <p className={styles.leader}>• Specifically designed a four-layer PCB board for GPS RTK, incorporating the ZED-F9P module to achieve high precision in drone navigation and positioning.</p>
 			</div>
 		</div>
-		<div className={`${styles.demoCard} ${styles.step2}`}>
+		<div className={`${styles.demoCard} ${styles.step4}`}>
 			<div className={styles.head}>
 				<div className={styles.numberBox}>
 					<span className={styles.span}>Oct2023-Present</span>
@@ -41,7 +70,7 @@ export default function Work() {
 			</div>
 		</div>
 
-		<div className={`${styles.demoCard} ${styles.step3}`}>
+		<div className={`${styles.demoCard} ${styles.step5}`}>
 			<div className={styles.head}>
 				<div className={styles.numberBox}>
 					<span className={styles.span}>March2023 - Sept2023</span>
@@ -58,40 +87,6 @@ export default function Work() {
                 </div>
 			</div>
 		</div>
-
-		<div className={`${styles.demoCard} ${styles.step4}`}>
-			<div className={styles.head}>
-				<div className={styles.numberBox}>
-					<span className={styles.span}>Oct2023</span>
-				</div>
-				<div className={styles.subtitle}><div className={styles.small}>Website Developer</div> Software Freedom Day, Panjab University</div>
-			</div>
-			<div className={styles.body}>
-                <p className={styles.leader}>• Contributed to the development of the event website, utilizing the latest web technologies to ensure a modern, responsive design.</p>
-                <p className={styles.leader}>• Served as the Management and Coordination Head for the event, overseeing logistical planning and ensuring smooth coordination among all participants and organizers.</p>
-                <div className={styles.btns}>
-                    <button className={styles.button} onClick={() => window.location.href = 'https://softwarefreedomday.in/'}>Website Link</button>
-                    <button className={styles.button} onClick={() => window.location.href = 'https://softwarefreedomday.in/'}>Github Link</button>
-                </div>
-			</div>
-		</div>
-		<div className={`${styles.demoCard} ${styles.step5}`}>
-			<div className={styles.head}>
-				<div className={styles.numberBox}>
-					<span className={styles.span}>2017-2018</span>
-				</div>
-				<div className={styles.subtitle}><div className={styles.small}>Headgirl</div> D.C. Model Sr. Sec. School</div>
-			</div>
-			<div className={styles.body}>
-                <p className={styles.leader}>• Managed and organized numerous events and competitions at the school, ensuring their successful execution.</p>
-                <p className={styles.leader}>• Represented the school at various events, including delivering public speeches.</p>	
-                <p className={styles.leader}>• Led and motivated a team of student council members to achieve set goals and improve school activities.</p>	
-                <p className={styles.leader}>• Coordinated with teachers and staff to plan and execute school-wide initiatives and programs.</p>	
-
-
-			</div>
-		</div>
-    
 	</div>
 </section>
     </>)

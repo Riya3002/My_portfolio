@@ -79,7 +79,7 @@ const annotationPoints: AnnotationPoint[] = [
     headingposition: [0.6, 3.5, 0],
     headingrotation: [0, 0, -0.07],
     links: [
-      ''
+      'https://drive.google.com/file/d/1EDONzSRVCICWZkL0rTZ1Cn0-SQDNHAyq/view?usp=sharing'
     ]
   }
 ];
