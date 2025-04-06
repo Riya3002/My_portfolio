@@ -3,7 +3,7 @@ import Styles from './styles.module.css'
 import Link from 'next/link'
 
 export default function Resumebtn({ text }: { text: string }) {
-    const resumeLink = 'https://drive.google.com/file/d/1EDONzSRVCICWZkL0rTZ1Cn0-SQDNHAyq/view?usp=sharing';
+    const resumeLink = 'https://drive.google.com/file/d/145mHlX7SmMsQyEyNE_QMXkjMFzeS61xW/view?usp=drive_link';
 
     return (
         <>
