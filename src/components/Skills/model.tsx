@@ -8,6 +8,7 @@ import Model from '../Models/HeroModel/Model';
 import Styles from './styles.module.css';
 import ModelLoader from "@/components/Loaders/ModelLoader";
 import { useMediaQuery } from 'react-responsive';
+import Loader from "../Loaders/loader";
 
 interface ContentItem {
     heading: string;
@@ -22,23 +23,25 @@ const contentArray: ContentItem[] = [
         ] 
     },
     {   
+        heading: "Embedded Engineering \n and Robotics", 
+        content: [
+            "Languages: C, Python, Embedded C ",
+            "Softwares: Kicad, FreeRTOS, Git, Github, Eclipse IDE, Thonny, Arduino IDE, STM32cube softwares, cutecom, MQTT Explorer",
+            "Hardware: ICs, Circuit Design, Control System, PCB Soldering, Sensor integrations, Microcontrollers: STM32FXXXX, STM32HXXXX, ESP32, Arduino, etc.",
+            "Communication Protocols - SPI, I2C, RS485, CAN, MQTT",
+            "Semiconductors: Fabrication Processes, Lithography, Etching methods, Metallization, Cutting and Packaging",
+        ]
+    },
+    {   
         heading: "Website Development", 
         content: [
             'Frameworks: Reactjs, Nextjs',
-            'UI: CSS, Tailwind, Figma, Canva',
             'Languages: Javascript, Typescript',
+            'Backend: ExpressJS, NodeJS',
             'Database: MongoDB, MySQL',
+            'UI: CSS, Tailwind, Figma, Canva',
             'Tools: Git, Github, VSCode',
-            'Backend: ExpressJS, NodeJS'
         ] 
-    },
-    {   
-        heading: "Embedded Engineering \n and Robotics", 
-        content: [
-            'Software: Arduino IDE,\n Thonny, Kicad, LTspice,Eclipse IDE, FreeRTOS',
-            'Hardware: Microcontrollers,\n Sensors, Actuators, Communication protocols ',
-            'Languages: C, Embedded C, Python'
-        ]
     },
     {   
         heading:" Graphic Designing", 
@@ -49,7 +52,10 @@ const contentArray: ContentItem[] = [
         content: [
             'Git',
             'Github',
-            'VS Code'
+            'VS Code',
+            'Eclipse IDE',
+            'Stm32cubeIDE',
+            'Arduino IDE'
         ] 
     },
     {   
@@ -59,7 +65,11 @@ const contentArray: ContentItem[] = [
             'Leadership',
             'Delegation',
             'Analytical Thinking',
-            'Public Speaking'
+            'Public Speaking',
+            'Adaptability',
+            'Strategizing', 
+            'Time Optimization',
+            'Problem Solving'
         ]
     },
 ];
@@ -144,7 +154,7 @@ const SkillModel: React.FC = () => {
                     <ambientLight intensity={1.6} />
                     <hemisphereLight intensity={1} />
                     <light intensity={6} />
-                    <Suspense fallback={<ModelLoader />}>
+                    <Suspense fallback={<Loader />}>
                         <AnimatedModel scale={modelScale} position={modelPosition} targetRotationAngle={rotationAngle} />
                         <OrbitControls enablePan={false} enableRotate={false} enableZoom={false} />
                     </Suspense>
